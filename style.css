@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    background-color: white; /* White background */
+    color: transparent; /* Remove the default color so that the gradient can be applied */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Distribute space between the name and the nav items */
+    align-items: center; /* Align the items vertically */
+}
+
+/* Gradient Text for Header */
+header h1 {
+    font-size: 24px;
+    background: linear-gradient(to right, #00c6ff, #ff00cc); /* Gradient from blue to pink */
+    -webkit-background-clip: text; /* Apply the gradient only to the text */
+    color: transparent; /* Ensures the text is transparent so the gradient is visible */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 850px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a {
+    background: linear-gradient(to right, #00c6ff, #ff00cc); /* Gradient from blue to pink */
+    -webkit-background-clip: text; /* Apply the gradient only to the text */
+    color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px; /* Increased text size for buttons */
+    padding: 10px 20px; /* Gradient background */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(to left, #00c6ff, #ff00cc); /* Reverse gradient on hover */
+    color: white; /* Ensure text remains white on hover */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url('background.jpg'); /* Replace 'background3.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.profile-photo {
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: justify;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: var(--background);
+    backdrop-filter: blur(0.5rem);
+    color: #FFFFFF;
+}
+
+.about-text p {
+    text-align: center;
+}
+
+.section {
+    padding: 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, #00c6ff, #ff00cc); /* Gradient from blue to pink */
+    -webkit-background-clip: text; /* Apply the gradient only to the text */
+    color: transparent; /* Ensures the text is transparent so the gradient is visible */
+}
+
+/* Projects Section Container */
+#projects-container {
+    background-color: #f0f0f0; /* Light grey background */
+    background-image: url('background.jpg'); /* Optional background image */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.project {
+    background: var(--background);
+    backdrop-filter: blur(0.5rem);
+    color: #FFFFFF;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+/* Contact Section Container */
+#contact-container {
+    background-color: #e3e3e3; /* Light grey background */
+    background-image: url('background.jpg'); /* Optional background image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+form {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #c911a7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2111c9;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+

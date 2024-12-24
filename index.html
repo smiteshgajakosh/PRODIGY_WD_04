@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Smitesh Gajakosh</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="profile.jpg" alt="Smitesh Gajakosh" class="profile-photo">
+            <div class="about-text">
+                <p>Hello! I'm <strong>Smitesh Gajakosh</strong>, a Computer Engineer with a passion for creating efficient and scalable Software solutions. I specialize in Web Development, Application Design, and Problem-solving. I believe in continuous learning and innovation.</p>
+                <p>In my free time, I enjoy exploring new technologies, contributing to open-source projects, and meet up with new Developers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div id="projects-container">
+            <div class="project-list">
+                <div class="project">
+                    <h3>Project 1: Weather Application</h3>
+                    <p>A simple app providing real-time weather updates for any location using APIs.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2: Tic-Tac-Toe Game</h3>
+                    <p>A classic two-player game application built with interactive UI for real-time gameplay.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3: Stopwatch Application</h3>
+                    <p>An interactive app to track time with start, pause, reset, and lap recording features</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaboration or just to say Hi!</p>
+        <div id="contact-container">
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Smitesh Gajakosh. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
